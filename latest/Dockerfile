@@ -13,7 +13,7 @@ RUN apk --update --progress --no-cache --repository http://dl-cdn.alpinelinux.or
     php7-tokenizer \
     && curl -sL http://static.phpmd.org/php/latest/phpmd.phar -o /usr/bin/phpmd \
     && chmod +x /usr/bin/phpmd \
-    && apk del curl \
+#    && apk del curl \
     && rm -rf /var/cache/apk/* /var/tmp/* /tmp/*
 
 VOLUME /app
